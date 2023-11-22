@@ -1,0 +1,58 @@
+Lab Git
+
+Part 1
+
+    Clone that repo to your computer.
+
+$ git clone https://github.com/petrarkaselin/IronTatyana.git
+Cloning into 'IronTatyana'...
+
+    Create a file in that folder. Name it about.txt and add a fun fact about yourself. 
+
+$ touch about.txt
+$ echo "I've watched more than 2500 movies and shows" > about.txt
+
+    Add the file you just created to the git.
+
+$ git add about.txt
+
+    Commit the changes.
+
+$ git commit -m 'Created about.txt'
+[main (root-commit) 133583d] Created about.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.txt
+
+    Push the changes to the GitHub and check your repository to make sure everything is there.
+
+$ git push origin main
+
+Part 2
+
+    Fork your classmate's repository.
+    Clone the repository, so that you have it locally and can make changes.
+
+$ git clone https://github.com/petrarkaselin/IronTiago.git
+
+    Create a new branch named classmate.
+
+$ git branch classmate
+
+    Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+
+$ touch tatyana.txt
+
+$ echo "I enrolled Ironhack's Data Analytics bootcamp because I want to analyze!" > tatyana.txt
+
+    Add the changes to the git.
+
+$ git add tatyana.txt
+
+    Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+
+$ git commit -m 'Created tatyana.txt'
+$ git push origin main
+
+    Create a pull request to make changes appear in the original repository.
+
+    Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
